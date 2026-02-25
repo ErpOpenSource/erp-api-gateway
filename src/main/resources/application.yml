@@ -52,3 +52,6 @@ management:
     health:
       probes:
         enabled: true
+  tracing:
+    sampling:
+      probability: 1.0   # dev: 100% de trazas (en prod suele ser 0.1 o menos)
