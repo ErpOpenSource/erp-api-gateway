@@ -4,6 +4,8 @@ server:
 spring:
   application:
     name: erp-api-gateway
+  reactor:
+    context-propagation: auto
 
   cloud:
     gateway:

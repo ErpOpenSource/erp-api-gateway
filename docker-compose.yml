@@ -10,5 +10,6 @@ services:
       - erp-net
 
 networks:
-  erp-net:
-    driver: bridge
+  erp-platform:
+    external: true
+    name: erp-platform
