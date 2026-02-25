@@ -1,0 +1,14 @@
+services:
+  erp-api-gateway:
+    container_name: erp-api-gateway
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - JAVA_OPTS=-XX:MaxRAMPercentage=75.0
+    networks:
+      - erp-net
+
+networks:
+  erp-net:
+    driver: bridge
