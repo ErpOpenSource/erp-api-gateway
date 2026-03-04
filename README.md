@@ -217,7 +217,7 @@ GET http://localhost:8080/actuator/health/readiness
 
 ## CORS
 
-CORS is fully permissive in development (`allowedOrigins: *`).
+CORS is fully permissive in development (`allowedOriginPatterns: *`, methods/headers/exposedHeaders `*`, credentials enabled).
 **Must be restricted to explicit domains before deploying to production.**
 See [docs/Cors.md](docs/Cors.md).
 
